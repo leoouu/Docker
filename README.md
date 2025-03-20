@@ -1,20 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Configuração de um Cluster MongoDB com Docker</title>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 40px; background-color: #f8f9fa; }
-        h1 { color: #2c3e50; text-align: center; }
-        h2 { color: #34495e; border-bottom: 2px solid #3498db; padding-bottom: 5px; }
-        h3 { color: #16a085; }
-        p, li { color: #555; }
-        pre { background: #ecf0f1; padding: 15px; border-radius: 5px; overflow-x: auto; }
-        code { font-family: monospace; font-weight: bold; color: #e74c3c; }
-        ul { background: #fff; padding: 15px; border-radius: 5px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); }
-    </style>
-</head>
 <body>
     <h1>🚀 Configuração de um Cluster MongoDB com Docker</h1>
     <p>Este repositório contém as instruções detalhadas para configurar um cluster <strong>MongoDB Replica Set</strong> utilizando <strong>Docker</strong> no <strong>Docker Desktop</strong>.</p>
