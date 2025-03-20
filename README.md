@@ -6,9 +6,9 @@
     
     <h2>📌 Requisitos</h2>
     <ul>
-        <li>✅ <a href="https://www.docker.com/products/docker-desktop">Docker Desktop</a></li>
-        <li>✅ <a href="https://www.mongodb.com/try/download/compass">MongoDB Compass</a></li>
-        <li>✅ Editor de texto (VS Code, Notepad++, etc.)</li>
+        ✅ <a href="https://www.docker.com/products/docker-desktop">Docker Desktop</a></li>
+        ✅ <a href="https://www.mongodb.com/try/download/compass">MongoDB Compass</a></li>
+        ✅ Editor de texto (VS Code, Notepad++, etc.)</li>
     </ul>
 
     <h2>🔧 Passo 1: Criar uma Rede Docker</h2>
