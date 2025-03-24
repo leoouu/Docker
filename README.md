@@ -59,12 +59,12 @@ db.testCollection.insertMany([
 <pre><code>docker start mongo2</code></pre>
 
 📉 Queda do Nó Primário
-<pre><code>docker stop mongo1</code></pre>
+<code>docker stop mongo1</code>
     <pre><code>docker exec -it mongo2 mongosh
-<pre>rs.status()</code></pre>
-    <pre><code>use testDB
-<pre>db.testCollection.insertOne({ nome: "Carlos", idade: 40 })</code></pre>
-    <pre><code>docker start mongo1</code></pre>
+rs.status()</code>
+    <code>use testDB
+db.testCollection.insertOne({ nome: "Carlos", idade: 40 })</code>
+   <code>docker start mongo1</code>
 
 
 
