@@ -59,15 +59,6 @@ rs.status()</code></pre>
 db.testCollection.insertOne({ nome: "Carlos", idade: 40 })</code></pre>
     <pre><code>docker start mongo1</code></pre>
 
-    <h2>🎥 Passo 6: Gravar e Publicar o Vídeo</h2>
-    <p>Grave a execução do cluster, publique no YouTube e inclua:</p>
-    <ul>
-        <li>📌 O link deste repositório.</li>
-        <li>📌 O tempo de cada etapa do vídeo.</li>
-    </ul>
-    <pre><code>00:01:10 - Apresentação do grupo
-00:10:15 - Explicação sobre Replica Set
-00:14:30 - Inserção de dados no Primário</code></pre>
 
     <h2>✅ Conclusão</h2>
     <p>Este guia ajudou a configurar um <strong>Replica Set do MongoDB</strong> no <strong>Docker Desktop</strong>, testando a <strong>replicação</strong> e a <strong>recuperação de falhas</strong>.</p>
