@@ -11,7 +11,7 @@
 <pre><code>docker network create mongo-cluster</code></pre>
 
 <h2>🐳 Configurar Contêineres</h2>
-# Nó Primário
+<pre><code># Nó Primário<h2># Nó Primário</h2>
 docker run -d --name mongo1 --net mongo-cluster -p 27017:27017 mongo:latest --replSet rs0
 
 # Nós Secundários
