@@ -56,3 +56,7 @@ docker start mongo1</code></pre>
     <strong>🔌 Conexão MongoDB Compass:</strong><br>
     URI: <code>mongodb://localhost:27017/?replicaSet=rs0</code>
 </blockquote>
+
+<h2>👨‍💻 Autor</h2>
+    <p><strong>Nome:</strong> Leonardo <br>
+       <strong>Repositório:</strong> <a href="#">https://github.com/leoouu/Docker</a></p>
