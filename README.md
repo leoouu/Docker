@@ -36,7 +36,7 @@ db.testCollection.insertMany([
 ])</code></pre>
 
 <h2>⚠️ Simular Falha</h2>
-<pre><code># Parar nó primário
+<pre><code><h2> Parar nó primário </h2>
 docker stop mongo1
 
 # Verificar status
