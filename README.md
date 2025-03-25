@@ -47,7 +47,7 @@ docker start mongo1</code></pre>
 
 <h2>✅ Funcionalidades</h2>
 <ul>
-    <li>📊 3 nós MongoDB em cluster</li>
+    <li>📊 4 nós MongoDB em cluster</li>
     <li>🔄 Replicação automática de dados</li>
     <li>⏱️ Failover automático</li>
 </ul>
