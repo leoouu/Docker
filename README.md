@@ -16,7 +16,8 @@ docker run -d --name mongo1 --net mongo-cluster -p 27017:27017 mongo:latest --re
 
 # Nós Secundários
 docker run -d --name mongo2 --net mongo-cluster mongo:latest --replSet rs0
-docker run -d --name mongo3 --net mongo-cluster mongo:latest --replSet rs0</code></pre>
+docker run -d --name mongo3 --net mongo-cluster mongo:latest --replSet rs0
+docker run -d --name mongo4 --net mongo-cluster mongo:latest --replSet rs0</code></pre>
 
 <h2>⚙️ Inicializar Replica Set</h2>
 <pre><code>docker exec -it mongo1 mongosh --eval "rs.initiate({
@@ -25,6 +26,7 @@ docker run -d --name mongo3 --net mongo-cluster mongo:latest --replSet rs0</code
     { _id: 0, host: 'mongo1:27017' },
     { _id: 1, host: 'mongo2:27017' },
     { _id: 2, host: 'mongo3:27017' }
+    { _id: 3, host: 'mongo4:27017' }
   ]
 })"</code></pre>
 
