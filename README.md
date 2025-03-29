@@ -25,11 +25,15 @@ docker run -d --rm -p 27020:27017 --name mongo4 --network mongo-cluster mongodb/
 rs.initiate ({ _id: "myReplicaSet", members:[{_id:0, host: "mongo1"}, {_id:1, host: "mongo2"}, {_id:2, host: "mongo3"}, {_id:3, host: "mongo4"}, {_id:4, host: "mongo5"}, {_id:5, host: "mongo6"}]});"</code></pre>
 
 <h2>🧪 Testar Replicação</h2>
-<pre><code>use testDB
-db.testCollection.insertMany([
-  { nome: "João", idade: 30 },
-  { nome: "Maria", idade: 25 }
-])</code></pre>
+<pre><code>use testdb;
+
+db.test.insertMany([
+    {"nome": "Ana", "idade": 20},
+    {"nome": "Bruno", "idade": 21},
+    {"nome": "Caio", "idade": 22},
+    {"nome": "Diana", "idade": 23}
+]);
+db.test.find();</code></pre>
 
 <h2>⚠️ Simular Falha</h2>
 <pre><code><h2> Parar nó primário </h2>
