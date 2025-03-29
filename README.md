@@ -7,6 +7,9 @@
     <li>⌨️ Editor de texto (VS Code recomendado)</li>
 </ul>
 
+<h2>📱 Baixar a imagem do MongoDB</h2>
+<pre><code>docker pull mongodb/mongodb-community-server:latest</code></pre>
+
 <h2>🌐 Criar Rede Docker</h2>
 <pre><code>docker network create mongo-cluster</code></pre>
 
@@ -34,6 +37,9 @@ db.test.insertMany([
     {"nome": "Diana", "idade": 23}
 ]);
 db.test.find();</code></pre>
+
+<h2>🔌 Conectar-se ao cluster</h2>
+<pre><code>mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.3.8</code></pre>
 
 <h2>⚠️ Simular Falha</h2>
 <pre><code><h2> Parar nó primário </h2>
