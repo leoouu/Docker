@@ -12,12 +12,12 @@
 
 <h2>🐳 Configurar Contêineres</h2>
 <pre><code><h2>Nó Primário</h2>
-docker run -d --name mongo1 --net mongo-cluster -p 27017:27017 mongo:latest --replSet rs0
+docker run -d --rm -p 27017:27017 --name mongo1 --network mongo-cluster mongodb/mongodb-community-server:latest --replSet myReplicaSet --bind_ip localhost,mongo1
 
 # Nós Secundários
-docker run -d --name mongo2 --net mongo-cluster mongo:latest --replSet rs0
-docker run -d --name mongo3 --net mongo-cluster mongo:latest --replSet rs0
-docker run -d --name mongo4 --net mongo-cluster mongo:latest --replSet rs0</code></pre>
+docker run -d --rm -p 27018:27017 --name mongo2 --network mongo-cluster mongodb/mongodb-community-server:latest --replSet myReplicaSet --bind_ip localhost,mongo2
+docker run -d --rm -p 27019:27017 --name mongo3 --network mongo-cluster mongodb/mongodb-community-server:latest --replSet myReplicaSet --bind_ip localhost,mongo3
+docker run -d --rm -p 27020:27017 --name mongo4 --network mongo-cluster mongodb/mongodb-community-server:latest --replSet myReplicaSet --bind_ip localhost,mongo4</code></pre>
 
 <h2>⚙️ Inicializar Replica Set</h2>
 <pre><code>docker exec -it mongo1 mongosh --eval "rs.initiate({
